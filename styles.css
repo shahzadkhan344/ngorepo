@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+
+.black {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+
+}
+
+.navbar img {
+    height: 70px;
+    /* Adjust logo size */
+    margin-right: 20px;
+    /* Space between logo and menu items */
+}
+
+.img {
+    height: 85px;
+    margin-right: 0px;
+    background-color: #FDD831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    margin-top: -31px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: small;
+
+
+}
+
+
+.navbar li {
+    margin: 0 15px;
+    /* Space between menu items */
+    color: #232323;
+}
+
+.navbar a {
+    color: #232323;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn {
+
+    font-size: .85rem;
+    color: #484848;
+    background-color: #FDD831;
+    font-family: Rubik, sans-serif;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 500;
+    padding: .75rem 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 0 .8rem -.07rem transparent;
+}
+
+.icon i {
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: #000;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+.navbar .donate-button:hover {
+    background-color: #caaf34;
+    /* Darker shade on hover */
+}
+/* Base styles for larger screens (desktop/tablet) */
+.contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    background-color: #fff;
+  }
+  
+  .text {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .text h1 {
+    font-weight: 600;
+    color: #2f2f2f;
+    font-size: 2.8em;
+    line-height: 55px;
+    text-align: center;
+  }
+  
+  .text span {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fdd831;
+    font-weight: 600;
+  }
+  
+  .vid {
+    width: 50%;
+    height: 80%;
+    background-color: rgb(5, 3, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vid video {
+    width: 53vw;
+    height: auto; /* Make sure the height scales with the width */
+    margin-left: -4vw;
+  }
+  
+  .contant button {
+    font-size: 1.1rem;
+    color: #484848;
+    background-color: #FDD831;
+    font-family: Rubik, sans-serif;
+    border-radius: 5rem;
+    border: none;
+    padding: .75rem 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 0 .8rem -.07rem transparent;
+    margin-top: 26px;
+    margin-right: 13vw;
+    align-self: center; /* Center the button in the text section */
+  }
+  
+/* Base styles for larger screens (desktop/tablet) */
+.contact2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows cards to wrap */
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.text2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.text2 h1 {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.text2 p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #484848;
+    line-height: 1.5;
+}
+
+.text2 span {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fdd831;
+    font-weight: 600;
+}
+
+.text2 button {
+    margin-top: 30px;
+    background-color: #fdd831;
+    box-shadow: 0 0 1px 1px #e6c32a;
+    color: #5a4a06;
+    font-size: 1.1rem;
+    font-family: Rubik, sans-serif;
+    border-radius: 5rem;
+    border: none;
+    padding: .75rem 1.8rem;
+    cursor: pointer;
+}
+
+.card {
+    width: 25%;
+    margin: 20px 2.5vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: solid #FDD831 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.text3 h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #FDD831;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.text3 h4 {
+    font-size: 1rem;
+    color: #484848;
+    text-align: center;
+}
+
+/* Base styles for larger screens (desktop/tablet) */
+.contant4 {
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/children-wide-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #e6c32a;
+}
+
+.maindiv {
+    font-family: sans-serif;
+    color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 70%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #FDD831;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.scards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: auto;
+    background-color: #FDD831;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.cardss {
+    background-color: #fff;
+    width: 220px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #0a9962;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cardss:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.cardss img {
+    width: 150px;
+    height: auto; /* Ensure image maintains aspect ratio */
+    margin-top: 20px;
+}
+
+.cardss h1 {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Base styles for larger screens (desktop/tablet) */
+.contant5 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.text6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.text6 h1 {
+    font-size: 30px;
+    margin: 23px;
+    padding-top: 50px;
+    line-height: 1.3;
+}
+
+.text6 span {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fdd831;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.text6 p {
+    color: #2f2f2f;
+    width: 70%;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.img6 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.img6 img {
+    width: 33vw;
+    max-width: 100%;
+    padding-top: 4vw;
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Base styles */
+.text7 {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.text7 h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.text7 span {
+    color: #FDD831;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+
+/* Main container for the cards */
+.contant7 {
+    width: 100%;
+    height: auto; /* Adjust height for responsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    background-color: #fff;
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Individual cards */
+.card8 {
+    background-color: #fff;
+    width: 22%; /* Adjust width to fit in 4 columns initially */
+    height: 250px; /* Fixed height for cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+    transition: transform 1.3s ease;
+}
+
+/* Card image styling */
+.card8 img {
+    width: 95px;
+    height: 150px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Card title styling */
+.card8 h2 {
+    margin-top: 20px;
+    color: #2f2f2f;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+/* Card counter styling */
+.card8 h1 {
+    color: #2f2f2f;
+    font-size: larger;
+    text-align: center;
+    width: 200px;
+    font-weight: bolder;
+}
+
+/* Hover effect */
+.card8:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* Container styling */
+.contant8 {
+    width: 100%; /* Ensure the container takes full width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Image styling */
+.contant8 img {
+    width: 100%; /* Ensure image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container without distortion */
+}
+
+
+/* Container for Stories & Updates */
+.contant9 {
+    margin-top: -20px;
+    width: 100%;
+    height: 50px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text vertically */
+    background-color: #FDD831;
+}
+
+/* Heading inside the container */
+.contant9 h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Default font size */
+    color: #2f2f2f; /* Text color */
+}
+
+
+
+/* Main container for the mall section */
+.mall {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: #FDD831;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+/* Inner container for left and right sections */
+.chotamall {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #ffa702;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.466);
+    flex-wrap: wrap; /* Allow the children to wrap on smaller screens */
+}
+
+/* Left section styling */
+.leftmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: #ff7b00;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included */
+}
+
+/* Heading in the left section */
+.leftmall h1 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    color: wheat;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Paragraph styling in the left section */
+.leftmall p {
+    margin-top: 25px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: wheat;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button styling in the left section */
+.leftmall button {
+    font-size: 1.1rem;
+    color: #484848;
+    background-color: #FDD831;
+    font-family: Rubik, sans-serif;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 400;
+    padding: .75rem 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 0 .8rem -.07rem transparent;
+    margin-top: 26px;
+    text-align: center;
+}
+
+/* Right section styling */
+.rightmall {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image styling in the right section */
+.rightmall img {
+    height: 100%;
+    width: auto;
+    max-width: 100%; /* Make the image responsive */
+}
+
+
+
+.contant10 {
+    width: 100%;
+    height: auto; /* Set height to auto to ensure it adjusts with the content */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 20px; /* Add a top margin for spacing */
+}
+
+/* Image inside the bottom banner */
+.contant10 img {
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.whatsapp_main img {
+    width: 70px;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    animation: scaleAnimation 1.5s infinite;
+    /* Apply the animation */
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Scale to 110% */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.whatsapp_main img:hover {
+    transform: scale(1.4);
+    /* Scale the image to 110% of its size on hover */
+    transition: transform 0.5s;
+    /* Smooth transition for the scaling effect */
+}
+/* Footer styling */
+footer {
+    width: 100%;
+    background-color: #232323;
+    color: rgb(250, 238, 238);
+    padding: 30px 0; /* Added padding to adjust the spacing */
+}
+
+/* Container for the lists */
+.textconteiner {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Space items evenly */
+    padding: 20px 50px;
+    gap: 20px;
+}
+
+/* Headings for each section */
+ul h1 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #FDD831; /* Added color for better readability */
+}
+
+/* List items styling */
+ul li {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    margin-left: 10px;
+    color: rgb(250, 238, 238);
+}
